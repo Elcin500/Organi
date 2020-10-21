@@ -52,14 +52,21 @@ namespace Organi.WebUI
 
             app.UseStaticFiles();
             app.UseRouting();
+            //  app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapAreaControllerRoute(
                     name: "areas",
-                    areaName:"Admin",
-                    pattern: "Admin/{controller=dashboard}/{action=Index}/{id?}"
+                    areaName: "Admin",
+                    pattern: "Admin/{controller=dashboard}/{action=index}/{id?}"
                     );
+
+                //endpoints.MapControllerRoute(
+                //  name: "areas",
+                //  pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+                //   );
+
 
                 endpoints.MapControllerRoute(
                     name:"default",

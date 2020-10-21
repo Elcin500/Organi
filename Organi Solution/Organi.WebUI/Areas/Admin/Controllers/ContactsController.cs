@@ -25,9 +25,17 @@ namespace Organi.WebUI.Areas.Admin.Controllers
         }
 
         // GET: Admin/Contacts
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? typeId)
         {
-            return View(await _context.Contacts.ToListAsync());
+            var query = _context.Contacts.AsQueryable();
+
+            if (typeId.HasValue && typeId.Value==1)
+            {
+                query = query.Where(c => c.Answer == null);
+
+            }
+
+            return View(await query.ToListAsync());
         }
 
         // GET: Admin/Contacts/Details/5
@@ -103,8 +111,9 @@ namespace Organi.WebUI.Areas.Admin.Controllers
                 _context.Entry(entity).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
 
+                TempData["Message"] = "Cavablandirildi";
 
-                return View(contact);
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {

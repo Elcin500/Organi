@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Organi.WebUI.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class DashBoardController : Controller
     {
         public IActionResult Index()

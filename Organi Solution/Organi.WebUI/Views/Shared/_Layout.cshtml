@@ -2,6 +2,8 @@
 
 @{ 
     var appinfo = db.AppInfos.FirstOrDefault();
+
+    string[] cardItems = Context.Request.Cookies["cards-item"]?.Split(",");
 }
 
 <!DOCTYPE html>
@@ -41,7 +43,10 @@
         <div class="humberger__menu__cart">
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a asp-controller="shop" asp-action="ShoppingCart">
+                    <i class="fa fa-shopping-bag"></i> 
+                    <span class="item-count @(cardItems?.Length==null || cardItems?.Length == 0?"d-none":"") ">@cardItems?.Length</span>
+                    </a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
@@ -134,7 +139,7 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a asp-area="admin" asp-controller="products" asp-action="index"><i class="fa fa-user"></i> Login</a>
+                                <a asp-area="admin" asp-controller="DashBoard" asp-action="index"><i class="fa fa-user"></i>Login</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +176,12 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a asp-controller="shop" asp-action="ShoppingCart">
+    <i class="fa fa-shopping-bag"></i>
+    <span class="item-count @(cardItems?.Length==null || cardItems?.Length == 0?"d-none":"") ">@cardItems?.Length</span>
+
+</a>
+                            </li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>

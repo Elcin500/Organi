@@ -155,7 +155,6 @@ C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreap
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Organi.WebUI.csprojAssemblyReference.cache
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DashBoard\Index.cshtml.g.cs
-C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
@@ -193,3 +192,9 @@ C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreap
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categories\Index.cshtml.g.cs
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Contacts\Index.cshtml.g.cs
 C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Contacts\Answer.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Subscribes\Create.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Subscribes\Delete.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Subscribes\Details.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Subscribes\Edit.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Subscribes\Index.cshtml.g.cs
+C:\Users\hp\source\repos\Organi\Organi Solution\Organi.WebUI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs

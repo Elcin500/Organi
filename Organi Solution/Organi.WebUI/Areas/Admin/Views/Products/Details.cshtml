@@ -4,51 +4,80 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Unit)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Unit)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShortDescription)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShortDescription)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Category.Id)
-        </dd>
-    </dl>
+<div class="content">
+    <ul class="breadcrumb">
+        <li>
+            <p>YOU ARE HERE</p>
+        </li>
+        <li><a href="#" class="active">Mehsullar</a> </li>
+    </ul>
+    <div class="page-title">
+        <i class="icon-custom-left"></i>
+        <h3>Form - <span class="semi-bold">Ətraflı</span></h3>
+    </div>
+    <div class="row" id="inbox-wrapper">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="grid simple">
+                        <div class="grid-body no-border email-body">
+                            <br>
+                            <div class="row-fluid">
+
+                                <div>
+                                    <h4>Product</h4>
+                                    <hr />
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Name)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Name)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.price)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.price)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Unit)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Unit)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Quantity)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Quantity)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.ShortDescription)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.ShortDescription)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Category)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Category.Id)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                                    <a asp-action="Index">Back to List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
